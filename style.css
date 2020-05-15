@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Montserrat", normal;
+    background-color: #2A363B;
+  }
+  
+  /* landing page top */
+ 
+  .farmily-corner {
+    position: absolute;
+    width: 266px;
+    height: 267px;
+    left: 38px;
+    top: 35px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.06em;
+    color: #99B898;
+  }
+
+  .farmer-button {
+    position: absolute;
+    border: 4px solid #99B898;
+    box-sizing: border-box;
+    width: 422px;
+    height: 78px;
+    left: 981px;
+    top: 37px;
+    background-color: #2A363B;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #99B898;
+  }
+
+  .farmer-button:hover {
+    background-color: #99B898;
+    color: #2A363B;
+    transition-duration: 400ms;
+  }
+
+  .food-button {
+    position: absolute;
+    width: 481px;
+    height: 343px;
+    left: 479px;
+    top: 311px;
+    border: none;
+    background-color: #2A363B;;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 144px;
+    line-height: 176px;
+    letter-spacing: 0.23em;
+    
+    color: #FECEAB;
+  }
+
+  .food-button:hover {
+    background-color: #FECEAB;
+    color: #2A363B;
+    transition-duration: 400ms;
+  }

@@ -1,2 +1,2 @@
-# cow-town-coders.github.io
+# Cow-Town-Coders
 RU Hacks

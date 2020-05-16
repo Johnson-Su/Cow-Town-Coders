@@ -27,13 +27,13 @@ var firebaseConfig = {
             var firebaseRef = firebase.database().ref();
                 firebaseRef.child("Farmer").push({
                     email: document.getElementById("email").value,
-                farm: document.getElementById("farm").value,
-                password: document.getElementById("password").value,
-                confirm: document.getElementById("confirm").value
+                    farm: document.getElementById("farm").value,
+                    password: document.getElementById("password").value,
+                    confirm: document.getElementById("confirm").value
                 }).then(function() {
                     document.location.href = "new-farmer2.html";
                 });
-
+        }
 
 
         function writeData2(){
@@ -41,7 +41,7 @@ var firebaseConfig = {
                   Product: document.getElementById("product").value,
                   Units: document.getElementById("units").value,
                   Quantity: document.getElementById("quantity").value,
-                  Price-Per-Unit: document.getElementById("price").value
+                  Price: document.getElementById("price").value
               });
 
         var firebaseRef = firebase.database().ref();
@@ -49,7 +49,7 @@ var firebaseConfig = {
                 Product: document.getElementById("product").value,
             Units: document.getElementById("units").value,
             Quantity: document.getElementById("quantity").value,
-            Price-Per-Unit: document.getElementById("price").value
+            Price: document.getElementById("price").value
             }).then(function() {
                 document.location.href = "__PLACEHOLDER___";
             });

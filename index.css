@@ -10,7 +10,61 @@ body {
   background: #2A363B;
 }
 
+
   /* landing page top */
+  .we{
+    position:absolute;
+    top: 45%;
+    left: 14%;
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 176px;
+    color: #FFF;
+}
+
+.hi {
+  position: relative;
+  width:100%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 70px;
+  color: #99B898 ;
+}
+
+  span:before{
+    content: '';
+    animation: animate infinite 12s;
+  }
+
+  @keyframes animate {
+    0%{
+      content: ' a Farmily.';
+    }
+
+    20%{
+      content: ' empowering farmers.';
+    }
+
+    40%{
+      content: ' reducing waste.';
+    }
+
+    60%{
+      content: ' connecting communities.';
+    }
+
+    80%{
+      content: ' working together.';
+    }
+
+    100%{
+      content: ' stronger together.';
+    }
+  }
 
   .farmily-corner {
     position: absolute;
@@ -25,13 +79,13 @@ body {
     font-size: 250%;
     line-height: 44px;
     letter-spacing: 0.06em;
-    color: #99B898;
+    color: #FFF;
   }
 
   .farmer-button {
     position: absolute;
     width: 300px;
-    height:200px;
+    height:150px;
     right: 3%;
     top: 3%;
     background-color: #2A363B;
@@ -39,11 +93,11 @@ body {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 450%;
+    font-size: 360%;
     line-height: 130%;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #99B898;
+    color: #FFF;
   }
 
   .farmer-button:hover {
@@ -54,24 +108,20 @@ body {
 
   .food-button {
     position: absolute;
-    width: 580px;
-    height: 400px;
-    left: 33%;
-    top: 40%;
+    width: 1250px;
+    height: 190px;
+    left: 14%;
+    top: 37%;
     border: none;
-    background-color: #2A363B;;
+    background-color: #2A363B;
 
     font-family: Montserrat;
     font-style: style;
     font-weight: 1000;
-    font-size: 1000%;
+    font-size: 1100%;
     letter-spacing: 0.10em;
 
     color: #FECEAB;
-  }
-
-  .find {
-    letter-spacing: 0.30em;
   }
 
   .food-button:hover {

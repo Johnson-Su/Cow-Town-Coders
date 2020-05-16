@@ -23,6 +23,12 @@ var firebaseConfig = {
                 password: document.getElementById("password").value,
                 confirm: document.getElementById("confirm").value
             });
+            firebase.database().ref("something").set({
+                email: document.getElementById("email").value,
+                farm: document.getElementById("farm").value,
+                password: document.getElementById("password").value,
+                confirm: document.getElementById("confirm").value
+            });
 
             var firebaseRef = firebase.database().ref();
                 firebaseRef.child("Farmer").push({
@@ -44,14 +50,14 @@ var firebaseConfig = {
                   Price: document.getElementById("price").value
               });
 
-        // var firebaseRef = firebase.database().ref();
-        //     firebaseRef.child("Sell").push({
-        //         Product: document.getElementById("product").value,
-        //         Units: document.getElementById("units").value,
-        //         Quantity: document.getElementById("quantity").value,
-        //         Price: document.getElementById("price").value
-        //     }).then(function() {
-        //         document.location.href = "__PLACEHOLDER___";
-        //     });
+        var firebaseRef = firebase.database().ref();
+            firebaseRef.child("Sell").push({
+                Product: document.getElementById("product").value,
+                Units: document.getElementById("units").value,
+                Quantity: document.getElementById("quantity").value,
+                Price: document.getElementById("price").value
+            }).then(function() {
+                document.location.href = "__PLACEHOLDER___";
+            });
 
         }

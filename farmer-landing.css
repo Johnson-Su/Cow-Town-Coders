@@ -1,31 +1,27 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-  }
-  
-  body {
-    font-family: 'Montserrat', normal;
-    background-color: #99B898;
-  }
+body {
+  position: relative;
+  width: 1440px;
+  height: 900px;
+
+  background: #99B898;
+}
 
   .text {
     position: absolute;
     width: 727px;
     height: 117px;
-    left: 356px;
-    top: 310px;
-    
+    left: 37%;
+    top: 25%;
+
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 96px;
     line-height: 117px;
     /* identical to box height */
-    
-    text-align: center;
     letter-spacing: 0.06em;
-    
-    color: #FECEAB;    
+
+    color: #FECEAB;
 
   }
 
@@ -33,9 +29,9 @@
     position: absolute;
     width: 331px;
     height: 112px;
-    left: 356px;
-    top: 496px;
-    
+    left: 20%;
+    top: 60%;
+
     border: 5px solid #FECEAB;
     box-sizing: border-box;
 
@@ -45,10 +41,10 @@
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
-    line-height: 44px;
+    line-height: 50px;
     text-align: center;
     letter-spacing: 0.06em;
-    
+
     color: #FECEAB;
   }
 
@@ -62,22 +58,22 @@
     position: absolute;
     width: 331px;
     height: 112px;
-    left: 752px;
-    top: 496px;
-    
+    left:70%;
+    top: 60%;
+
     border: 5px solid #FECEAB;
     box-sizing: border-box;
-    
+
     background-color: #99B898;
 
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
-    line-height: 44px;
+    line-height: 100px;
     text-align: center;
     letter-spacing: 0.06em;
-    
+
     color: #FECEAB;
   }
 

@@ -35,6 +35,16 @@
                     password: document.getElementById("password").value,
                     confirm: document.getElementById("confirm").value
                 });
+
+                var firebaseRef = firebase.database().ref();
+                    firebaseRef.child("Farmer").push({
+                        email: document.getElementById("email").value,
+                    farm: document.getElementById("farm").value,
+                    password: document.getElementById("password").value,
+                    confirm: document.getElementById("confirm").value
+                    }).then(function() {
+                        document.location.href = "new-farmer2.html";
+                    });
                 // document.location.href = "new-farmer2.html";
             }
         </script>
@@ -51,7 +61,7 @@
     </div>
 
     <div>
-        <label id="email-label">Email</p>
+        <label class="email-label">Email</p>
         <input id="email" class="email-input" placeholder="hello@applefarm.ca">
     </div>
     <div>

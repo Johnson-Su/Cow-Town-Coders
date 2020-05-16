@@ -1,0 +1,153 @@
+body {
+  position: relative;
+  width: 1440px;
+  height: 900px;
+
+  background: #99B898;
+}
+
+.welcome {
+  position: absolute;
+  width: 641px;
+  height: 88px;
+  left: 399px;
+  top: 106px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 88px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #FECEAB;
+}
+
+.line {
+  position: absolute;
+  width: 1147.5px;
+  height: 0px;
+  left: 144.5px;
+  top: 240px;
+
+  border: 8px solid #FECEAB;
+}
+
+.login {
+  position: absolute;
+  width: 448px;
+  height: 78px;
+  left: 496px;
+  top: 230px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 78px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #2A363B;
+}
+
+.email {
+
+  position: absolute;
+  width: 115px;
+  height: 44px;
+  left: 521px;
+  top: 401px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+
+  letter-spacing: 0.06em;
+
+  color: #2A363B;
+}
+
+.email-input {
+  width: 397.99px;
+  height: 37.15px;
+  background: #FFFFFF;
+  border: 5px solid #2A363B;
+  box-sizing: border-box;
+}
+
+.password {
+  position: absolute;
+  width: 198px;
+  height: 44px;
+  left: 521px;
+  top: 580px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+
+  letter-spacing: 0.06em;
+
+  color: #2A363B;
+
+
+}
+
+.password-input {
+
+  width: 397.99px;
+  height: 37.15px;
+
+  background: #FFFFFF;
+  border: 5px solid #2A363B;
+  box-sizing: border-box;
+}
+
+.log-in {
+  position: absolute;
+  width: 331px;
+  height: 112px;
+  left: 554px;
+  top: 770px;
+  background: #99B898;
+
+  border: 5px solid #2A363B;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #2A363B;
+}
+
+.log-in:hover {
+  background-color: #2A363B;
+  color: #99B898;
+  transition-duration: 400ms;
+}
+
+.logo{
+  position: absolute;
+  width: 44px;
+  height: 90px;
+  left: 23px;
+  top: 25px;
+}

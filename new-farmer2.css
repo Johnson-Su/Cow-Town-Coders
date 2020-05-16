@@ -42,7 +42,7 @@
     position: absolute;
     left: 7.5%;
     right: 61.98%;
-    top: 27.78%;
+    top: 29.5%;
     bottom: 66.42%;
     
     font-family: Montserrat;
@@ -56,79 +56,77 @@
     color: #2A363B;
   }
 
-  .email-label {
+  .product-label {
     position: absolute;
-    left: 16.25%;
-    right: 75.76%;
-    top: 48%;
-    bottom: 51.11%;
+    left: 12.11%;
+    right: 83.01%;
+    top: 40.87%;
+    bottom: 61.28%;
     
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
-    /* identical to box height */
-    
+    font-size: 18px;
+    line-height: 22px;
     letter-spacing: 0.06em;
+    
     color: #2A363B;
   }
 
-  .farm-label {
+  .units-label {
     position: absolute;
-    left: 56.32%;
-    right: 27.15%;
-    top: 48%;
-    bottom: 51.11%;
+    left: 52.23%;
+    right: 46.22%;
+    top: 40.87%;
+    bottom: 61.28%;
     
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
-    /* identical to box height */
-    
+    font-size: 18px;
+    line-height: 22px;
     letter-spacing: 0.06em;
+    
     color: #2A363B;
   }
 
-  .password-label {
+  .quantity-label {
     position: absolute;
-    left: 16.11%;
-    right: 70.14%;
-    top: 62%;
-    bottom: 34.33%;
+    left: 12.11%;
+    right: 82.65%;
+    top: 52.12%;
+    bottom: 40.03%;
     
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
-    /* identical to box height */
-    
+    font-size: 18px;
+    line-height: 22px;
     letter-spacing: 0.06em;
+    
     color: #2A363B;
+    
   }
 
-  .confirm-label {
+  .price-label {
     position: absolute;
-    left: 56.32%;
-    right: 17.36%;
-    top: 62%;
-    bottom: 34.33%;
+    left: 52.23%;
+    right: 38%;
+    top: 52.12%;
+    bottom: 40.03%;
     
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
-    /* identical to box height */
-    
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
     letter-spacing: 0.06em;
+    
     color: #2A363B;
   }
 
-  .email-input {
+  .product-input {
     position: absolute;
     height: 33px;
     width: 400px;
@@ -138,7 +136,7 @@
     box-sizing: border-box;
   }
 
-  .farm-input {
+  .units-input {
     position: absolute;
     height: 33px;
     width: 400px;
@@ -148,7 +146,7 @@
     box-sizing: border-box;
   }
 
-  .password-input {
+  .quantity-input {
     position: absolute;
     height: 33px;
     width: 400px;
@@ -158,8 +156,9 @@
     box-sizing: border-box;
   }
 
-  .confirm-input {
+  .price-input {
     position: absolute;
+    left: 0%;
     height: 33px;
     width: 400px;
     

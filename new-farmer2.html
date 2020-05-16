@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <script type="module" src="main.js"></script>
     <div>
         <h1 class="text">
             Hi! Welcome to the Farmily.
@@ -22,19 +23,19 @@
 
     <div>
         <label class="product-label">Product</p>
-        <input name="product" class="product-input" placeholder="Potatoes, cabbage, corn">
+        <input id="product" class="product-input" placeholder="Potatoes, cabbage, corn">
     </div>
     <div>
         <label class="units-label">Units</p>
-        <input name="units" class="units-input" placeholder="lbs, kg, ea">
+        <input id="units" class="units-input" placeholder="lbs, kg, ea">
     </div>
     <div>
         <label class="quantity-label">Quantity</p>
-        <input name="quantity" class="quantity-input" placeholder="5000">
+        <input id="quantity" class="quantity-input" placeholder="5000">
     </div>
     <div>
         <label class="price-label">Price Per Unit</p>
-        <input name="price" class="price-input" placeholder="2.50">
+        <input id="price" class="price-input" placeholder="2.50">
     </div>
 
     <div>
@@ -58,7 +59,9 @@
             <input type="checkbox">
             <span class="checkmark"></span>
         </label>
-        <a class="profile" href="--ADD PROFILE HERE---" style="text-decoration: none;">GO TO PROFILE</a>
+        <button class="profile" onclick="writeData2()">
+            GO TO PROFILE
+        </button>
     </div>
 
 </body>

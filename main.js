@@ -12,11 +12,11 @@ var firebaseConfig = {
     messagingSenderId: "135754925154",
     appId: "1:135754925154:web:b47b1216d393172150fd3b"
     };
-    
+
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 
-        function writeData(){
+        function writeData1(){
             firebase.database().ref("Farmer").set({
                 email: document.getElementById("email").value,
                 farm: document.getElementById("farm").value,
@@ -33,5 +33,25 @@ var firebaseConfig = {
                 }).then(function() {
                     document.location.href = "new-farmer2.html";
                 });
-            // document.location.href = "new-farmer2.html";
+
+
+
+        function writeData2(){
+              firebase.database().ref("Sell").set({
+                  Product: document.getElementById("product").value,
+                  Units: document.getElementById("units").value,
+                  Quantity: document.getElementById("quantity").value,
+                  Price-Per-Unit: document.getElementById("price").value
+              });
+
+        var firebaseRef = firebase.database().ref();
+            firebaseRef.child("Sell").push({
+                Product: document.getElementById("product").value,
+            Units: document.getElementById("units").value,
+            Quantity: document.getElementById("quantity").value,
+            Price-Per-Unit: document.getElementById("price").value
+            }).then(function() {
+                document.location.href = "__PLACEHOLDER___";
+            });
+
         }

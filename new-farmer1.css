@@ -127,11 +127,18 @@ body {
     position: absolute;
     height: 33px;
     width: 400px;
-
+    padding: 3px;
+    margin: 2px;
     background: #FFFFFF;
     border: 5px solid #2A363B;
     box-sizing: border-box;
   }
+
+  .email-input input:focus {
+       border:3px; solid #2A363B;
+       padding:2px;
+       margin: 0;
+   }
 
   .farm-input {
     position: absolute;

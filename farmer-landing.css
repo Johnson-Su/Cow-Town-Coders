@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Montserrat', normal;
+    background-color: #99B898;
+  }
+
+  .text {
+    position: absolute;
+    width: 727px;
+    height: 117px;
+    left: 356px;
+    top: 310px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 117px;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    color: #FECEAB;    
+
+  }
+
+  .returning {
+    position: absolute;
+    width: 331px;
+    height: 112px;
+    left: 356px;
+    top: 496px;
+    
+    border: 5px solid #FECEAB;
+    box-sizing: border-box;
+
+    background-color: #99B898;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    color: #FECEAB;
+  }
+
+  .returning:hover {
+    background-color: #FECEAB;
+    color: #99B898;
+    transition-duration: 400ms;
+  }
+
+  .new {
+    position: absolute;
+    width: 331px;
+    height: 112px;
+    left: 752px;
+    top: 496px;
+    
+    border: 5px solid #FECEAB;
+    box-sizing: border-box;
+    
+    background-color: #99B898;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    color: #FECEAB;
+  }
+
+  .new:hover {
+    background-color: #FECEAB;
+    color: #99B898;
+    transition-duration: 400ms;
+  }
+
+  .logo {
+    position: absolute;
+    width: 44px;
+    height: 90px;
+    left: 21px;
+    top: 23px;
+  }

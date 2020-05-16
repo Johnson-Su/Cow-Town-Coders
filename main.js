@@ -44,14 +44,14 @@ var firebaseConfig = {
                   Price: document.getElementById("price").value
               });
 
-        var firebaseRef = firebase.database().ref();
-            firebaseRef.child("Sell").push({
-                Product: document.getElementById("product").value,
-            Units: document.getElementById("units").value,
-            Quantity: document.getElementById("quantity").value,
-            Price: document.getElementById("price").value
-            }).then(function() {
-                document.location.href = "__PLACEHOLDER___";
-            });
+        // var firebaseRef = firebase.database().ref();
+        //     firebaseRef.child("Sell").push({
+        //         Product: document.getElementById("product").value,
+        //         Units: document.getElementById("units").value,
+        //         Quantity: document.getElementById("quantity").value,
+        //         Price: document.getElementById("price").value
+        //     }).then(function() {
+        //         document.location.href = "__PLACEHOLDER___";
+        //     });
 
         }

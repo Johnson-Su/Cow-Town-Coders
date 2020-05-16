@@ -2,14 +2,14 @@
     box-sizing: border-box;
     margin: 0;
   }
-  
+
   body {
     font-family: 'Montserrat', normal;
     background-color: #2A363B;
   }
-  
+
   /* landing page top */
- 
+
   .farmily-corner {
     position: absolute;
     width: 266px;
@@ -19,7 +19,7 @@
 
     font-family: Montserrat;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 36px;
     line-height: 44px;
     letter-spacing: 0.06em;
@@ -67,7 +67,7 @@
     font-size: 120px;
     line-height: 176px;
     letter-spacing: 0.10em;
-    
+
     color: #FECEAB;
   }
 

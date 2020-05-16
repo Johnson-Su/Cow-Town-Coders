@@ -23,23 +23,23 @@
 
     <div>
         <label class="product-label">Product</p>
-        <input id="product" class="product-input" placeholder="Potatoes, cabbage, corn">
+        <input type="text" id="product" class="product-input" placeholder="Potatoes, cabbage, corn">
     </div>
     <div>
         <label class="units-label">Units</p>
-        <input id="units" class="units-input" placeholder="lbs, kg, ea">
+        <input type="text" id="units" class="units-input" placeholder="lbs, kg, ea">
     </div>
     <div>
         <label class="quantity-label">Quantity</p>
-        <input id="quantity" class="quantity-input" placeholder="5000">
+        <input type="text" id="quantity" class="quantity-input" placeholder="5000">
     </div>
     <div>
         <label class="price-label">Price Per Unit</p>
-        <input id="price" class="price-input" placeholder="2.50">
+        <input type="text" id="price" class="price-input" placeholder="2.50">
     </div>
 
     <div>
-        <button class="add-product">
+        <button class="add-product" onclick="writeData2()">
             Add Product
         </button>
         <p class="add-another">+ Add Another Product</p>
@@ -59,7 +59,7 @@
             <input type="checkbox">
             <span class="checkmark"></span>
         </label>
-        <button class="profile" onclick="writeData2()">
+        <button class="profile">
             GO TO PROFILE
         </button>
     </div>

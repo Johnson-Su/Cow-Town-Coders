@@ -174,9 +174,10 @@
     position: absolute;
     width: 331px;
     height: 112px;
+    top: 80%;
+    left: 38%;
     text-align: center;
-    top: 620px;
-
+    
     border: 5px solid #2A363B;
     box-sizing: border-box;
     background: #99B898;

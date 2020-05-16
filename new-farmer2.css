@@ -42,7 +42,7 @@
     position: absolute;
     left: 7.5%;
     right: 61.98%;
-    top: 29.5%;
+    top: 28.5%;
     bottom: 66.42%;
     
     font-family: Montserrat;
@@ -60,7 +60,7 @@
     position: absolute;
     left: 12.11%;
     right: 83.01%;
-    top: 40.87%;
+    top: 36.87%;
     bottom: 61.28%;
     
     font-family: Montserrat;
@@ -77,7 +77,7 @@
     position: absolute;
     left: 52.23%;
     right: 46.22%;
-    top: 40.87%;
+    top: 36.87%;
     bottom: 61.28%;
     
     font-family: Montserrat;
@@ -94,7 +94,7 @@
     position: absolute;
     left: 12.11%;
     right: 82.65%;
-    top: 52.12%;
+    top: 46.12%;
     bottom: 40.03%;
     
     font-family: Montserrat;
@@ -112,7 +112,7 @@
     position: absolute;
     left: 52.23%;
     right: 38%;
-    top: 52.12%;
+    top: 46.12%;
     bottom: 40.03%;
     
     font-family: Montserrat;
@@ -167,8 +167,89 @@
     box-sizing: border-box;
   }
 
-  .profile {
+  .add-product {
     position: absolute;
+    width: 173.08px;
+    height: 45.41px;
+    left: 173.54px;
+    top: 433px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    color: #2A363B;
+    background: #99B898;
+    
+    border: 5px solid #2A363B;
+    box-sizing: border-box;
+  }
+
+  .add-product:hover {
+    background-color: #2A363B;
+    color: #99B898;
+    transition-duration: 400ms;
+  }
+
+  .add-another {
+    position: absolute;
+    width: 283.02px;
+    height: 25.65px;
+    left: 370.18px;
+    top: 443px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+
+    color: #E84A5F;
+  }
+
+  .add-another:hover {
+    color: #cc3333;
+  }
+
+  .text2 {
+    position: absolute;
+    left: 10.6%;
+    right: 61.98%;
+    top: 66.5%;
+    bottom: 22.42%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    
+    letter-spacing: 0.06em;
+    
+    color: #2A363B;
+  }
+
+  .location-input {
+    position: absolute;
+    left: 10.6%;
+    right: 50.98%;
+    top: 73.5%;
+    bottom: 22.42%;
+    width: 390px;
+    
+    background: #FFFFFF;
+    border: 5px solid #2A363B;
+    box-sizing: border-box;
+  }
+
+  .profile {
+    position: relative;
     width: 331px;
     height: 112px;
     left: 555px;

@@ -11,7 +11,7 @@ body {
   width: 641px;
   height: 88px;
   left: 399px;
-  top: 106px;
+  top: 70px;
 
   font-family: Montserrat;
   font-style: normal;
@@ -31,7 +31,7 @@ body {
   width: 1147.5px;
   height: 0px;
   left: 144.5px;
-  top: 240px;
+  top: 210px;
 
   border: 8px solid #FECEAB;
 }
@@ -41,7 +41,7 @@ body {
   width: 448px;
   height: 78px;
   left: 496px;
-  top: 230px;
+  top: 205px;
 
   font-family: Montserrat;
   font-style: normal;
@@ -57,12 +57,11 @@ body {
 }
 
 .email {
-
   position: absolute;
   width: 115px;
   height: 44px;
   left: 521px;
-  top: 401px;
+  top: 375px;
 
   font-family: Montserrat;
   font-style: normal;
@@ -77,6 +76,8 @@ body {
 }
 
 .email-input {
+  position: absolute;
+  top: 61px;
   width: 397.99px;
   height: 37.15px;
   background: #FFFFFF;
@@ -89,7 +90,7 @@ body {
   width: 198px;
   height: 44px;
   left: 521px;
-  top: 580px;
+  top: 515px;
 
   font-family: Montserrat;
   font-style: normal;
@@ -102,11 +103,11 @@ body {
 
   color: #2A363B;
 
-
 }
 
 .password-input {
-
+  position: absolute;
+  top: 61px;
   width: 397.99px;
   height: 37.15px;
 
@@ -120,7 +121,7 @@ body {
   width: 331px;
   height: 112px;
   left: 554px;
-  top: 770px;
+  top: 680px;
   background: #99B898;
 
   border: 5px solid #2A363B;

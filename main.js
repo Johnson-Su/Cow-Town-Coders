@@ -10,14 +10,23 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-   
+
+//makes cookie of userdata
+function userdata() {
+  farmerRef = firebase.database().ref();
+  newFarmerRef = farmerRef.push();
+  farmerID = newFarmerRef.key;
+  document.cookie = "farmerRef.toString()"+"="+"farmerID.toString()";
+}
+
 function writeData1(){
-    farmerRef = firebase.database().ref();
-    newFarmerRef = farmerRef.push();
-    farmerID = newFarmerRef.key;
-    // document.cookie = farmerRef.toString();
-    // document.location.href = "new-farmer2.html";
-    // console.log("in writedata1: " + document.cookie);
+  farmerRef = firebase.database().ref();
+  newFarmerRef = farmerRef.push();
+  farmerID = newFarmerRef.key;
+  console.log(document.cookie);
+  farmerRef = firebase.database().ref();
+  newFarmerRef = farmerRef.push();
+  farmerID = newFarmerRef.key;
     firebase.database().ref("Farmer/" + farmerID).set({
         email: document.getElementById("email").value,
         farm: document.getElementById("farm").value,
@@ -36,22 +45,26 @@ function writeData1(){
 }
 
 function writeData2(){
-    // console.log(farmerRef)
-    console.log(document.cookie);
-    // firebase.database().ref("Farmer/" + farmerID + "/New Product").set({
-    //     Product: document.getElementById("product").value,
-    //     Units: document.getElementById("units").value,
-    //     Quantity: document.getElementById("quantity").value,
-    //     Price: document.getElementById("price").value
-    // });
+  //makes 2 element array [0] is farmerRef [1] is farmerID
+  var splitcookie = document.cookie.split("=");
+  var farmerRef = splitcookie[0];
+  var farmerID = splitcookie[1];
+    console.log(farmerRef)
+    // console.log(document.cookie);
+    firebase.database().ref("Farmer/" + farmerID + "/New Product").set({
+        Product: document.getElementById("product").value,
+        Units: document.getElementById("units").value,
+        Quantity: document.getElementById("quantity").value,
+        Price: document.getElementById("price").value
+    });
 
-    // farmerRef.child("Sell").push({
-    //     Product: document.getElementById("product").value,
-    //     Units: document.getElementById("units").value,
-    //     Quantity: document.getElementById("quantity").value,
-    //     Price: document.getElementById("price").value
-    // }).then(function() {
-    //     // document.location.href = "__PLACEHOLDER___";
-    // });
+    farmerRef.child("Sell").push({
+        Product: document.getElementById("product").value,
+        Units: document.getElementById("units").value,
+        Quantity: document.getElementById("quantity").value,
+        Price: document.getElementById("price").value
+    }).then(function() {
+        document.location.href = "__PLACEHOLDER___";
+    });
 
 }

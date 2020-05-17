@@ -1,0 +1,68 @@
+body {
+  position: relative;
+  width: 1440px;
+  height: 900px;
+
+  background: #FECEAB;
+}
+
+.logo {
+  position: absolute;
+  width: 44px;
+  height: 90px;
+  left: 21px;
+  top: 23px;
+}
+
+.animate1{
+  position:absolute;
+  top:10%;
+  left: 25%;
+  width: 100%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 70px;
+  color: #FFF;
+}
+
+.animate2 {
+position: relative;
+width:100%;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+font-size: 70px;
+color: #99B898 ;
+}
+
+span:before{
+  content: '';
+  animation: animate infinite 12s;
+}
+
+@keyframes animate {
+  0%{
+    content: 'crave.';
+  }
+
+  20%{
+    content: 'want.';
+  }
+
+  40%{
+    content: 'need.';
+  }
+
+  60%{
+    content: 'desire.';
+  }
+
+  80%{
+    content: 'love.';
+  }
+
+  100%{
+    content: 'eat.';
+  }
+}

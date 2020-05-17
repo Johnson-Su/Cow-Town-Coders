@@ -1,3 +1,5 @@
+import { watchFile } from "fs";
+
 var firebaseConfig = {
     apiKey: "AIzaSyBSuD2Orc6lR-6eraS9zUDRoWKrdeP6W-g",
     authDomain: "farmily-43dbd.firebaseapp.com",
@@ -65,3 +67,67 @@ function writeData2(){
     });
 
 }
+
+
+// user stuff
+
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+    console.log(position.coords.latitude)
+    console.log(position.coords.longitude)
+    firebase.database().ref("User").set({
+        Distance: document.getElementById("distance").value,
+        Latitude: position.coords.latitude,
+        Longitude: position.coords.longitude,
+    });
+    firebase.database().ref().child("User").push({
+        Distance: document.getElementById("distance").value,
+        Latitude: position.coords.latitude,
+        Longitude: position.coords.longitude,
+    }).then(function() {
+        document.location.href = "user-main.html";
+    });
+}
+
+
+var map;
+
+function initMap() {
+    
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34, lng: 150},
+        zoom: 12
+    });
+}
+
+var global = "help"
+console.log(global)
+
+firebase.database().ref('User/Latitude').on('value', function(snapshot) {
+    getLat(snapshot.val());
+    console.log("data: " + snapshot.val())
+});
+
+function getLat(input){
+    global = input;
+    console.log("function: " + global)
+}
+
+console.log("should be updated: " + global)
+
+
+// firebase.database().ref('User/Longitude').on('value', function(snapshot) {
+//     getLong(snapshot.val)
+// });
+
+// function getLong(long){
+//     return long
+// }

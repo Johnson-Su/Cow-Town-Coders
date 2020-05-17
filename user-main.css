@@ -16,7 +16,7 @@ body {
 
 .animate1{
   position:absolute;
-  top:10%;
+  top: 5%;
   left: 25%;
   width: 100%;
   font-family: Montserrat;
@@ -65,4 +65,16 @@ span:before{
   100%{
     content: 'eat.';
   }
+}
+
+.map {
+  position: absolute;
+  width: 1258px;
+  height: 544px;
+  left: 150px;
+  top: 311px;
+
+  background: #FFFFFF;
+  border: 10px solid #99B898;
+  box-sizing: border-box;
 }

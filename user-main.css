@@ -17,7 +17,7 @@ body {
 .animate1{
   position:absolute;
   top: 5%;
-  left: 25%;
+  left: 26%;
   width: 100%;
   font-family: Montserrat;
   font-style: normal;
@@ -71,8 +71,8 @@ span:before{
   position: absolute;
   width: 1258px;
   height: 544px;
-  left: 150px;
-  top: 311px;
+  left: 200px;
+  top: 250px;
 
   background: #FFFFFF;
   border: 10px solid #99B898;

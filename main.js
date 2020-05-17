@@ -17,15 +17,18 @@ var firebaseConfig = {
     firebase.initializeApp(firebaseConfig);
 
         function writeData1(){
-            firebase.database().ref("Farmer").set({
-                email: "",
-                farm: "",
-                password: "",
-                confirm: "",
+            var newFarmerRef = farmerRef.push();
+            var farmerID = newFarmerRef.key;
+
+            firebase.database().ref("Farmer/" + farmerID).set({
+                email: document.getElementById("email").value,
+                farm: document.getElementById("farm").value,
+                password: document.getElementById("password").value,
+                confirm: document.getElementById("confirm").value
             });
 
             var firebaseRef = firebase.database().ref();
-                firebaseRef.child("Farmer").push({
+                firebaseRef.child("Farmer/" + farmerID).push({
                     email: document.getElementById("email").value,
                     farm: document.getElementById("farm").value,
                     password: document.getElementById("password").value,

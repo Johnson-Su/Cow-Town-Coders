@@ -339,11 +339,38 @@ body {
     transform: rotate(45deg);
   }
 
+  .text4 {
+    position: absolute;
+    left: 25%;
+    top:88%;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 0px;
+    /* identical to box height */
+
+    letter-spacing: 0.06em;
+    color: #2A363B;
+  }
+
+  .phone-input {
+    position: absolute;
+    left: 25%;
+    top:95%;
+    height: 33px;
+    width: 400px;
+    background: #FFFFFF;
+    border: 5px solid #2A363B;
+    box-sizing: border-box;
+  }
+
   .profile {
     position: absolute;
     width: 331px;
     height: 112px;
-    left: 45%;
+    left: 62.2%;
     top: 88.5%;
 
     border: 5px solid #2A363B;

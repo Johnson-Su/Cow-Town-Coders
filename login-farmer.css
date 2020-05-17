@@ -76,7 +76,10 @@ body {
 }
 
 .email-input {
+  font-family: Montserrat;
+  font-style: normal;
   position: absolute;
+  font-weight: bold;
   top: 61px;
   width: 397.99px;
   height: 37.15px;

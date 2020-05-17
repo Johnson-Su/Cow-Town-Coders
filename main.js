@@ -85,13 +85,13 @@ function showPosition(position) {
     });
 }
 
-function initMap(){  
+function initMap(){
     firebase.database().ref('User/Longitude').on('value', function(snapshot) {
         longitude = snapshot.val();
 
         firebase.database().ref('User/Latitude').on('value', function(snapshot) {
             latitude = snapshot.val();
-          
+
             var map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: latitude, lng: longitude},
                 zoom: 12
@@ -99,14 +99,14 @@ function initMap(){
 
             function addMarker(coords){
                 var marker = new google.maps.Marker({position: coords, map: map});
-            
+
                 var infoWindow = new google.maps.InfoWindow({
                     content: "Test"
                 });
             }
-            
+
             addMarker({lat: latitude, lng: longitude});
 
         });
-    });  
+    });
 }

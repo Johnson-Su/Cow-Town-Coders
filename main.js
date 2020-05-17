@@ -20,9 +20,9 @@ function userdata() {
 }
 
 function writeData1(){
-  farmerRef = firebase.database().ref();
-  newFarmerRef = farmerRef.push();
-  farmerID = newFarmerRef.key;
+  var splitcookie = document.cookie.split("=");
+  var farmerRef = splitcookie[0];
+  var farmerID = splitcookie[1];
   console.log(document.cookie);
   farmerRef = firebase.database().ref();
   newFarmerRef = farmerRef.push();

@@ -1,0 +1,148 @@
+body {
+    position: relative;
+    width: 1440px;
+    height: 900px;
+
+    background: #99B898;
+  }
+
+  .profile {
+    position: absolute;
+    width: 700px;
+    height: 88px;
+    left: 35%;
+    top: 8%;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 88px;
+    /* identical to box height */
+
+    letter-spacing: 0.06em;
+
+    color: #FECEAB;
+  }
+
+  .line {
+    position: absolute;
+    width: 80%;
+    height: 0px;
+    left: 17%;
+    top: 25%;
+    text-align:center;
+
+    border: 8px solid #FECEAB;
+  }
+
+  .name {
+    position: absolute;
+    width: 300px;
+    height: 44px;
+    left: 380px;
+    top: 300px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    letter-spacing: 0.06em;
+
+    color: #2A363B;
+  }
+
+  .location {
+    position: absolute;
+    width: 179px;
+    height: 44px;
+    left: 380px;
+    top: 400px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    letter-spacing: 0.06em;
+
+    color: #2A363B;
+
+  }
+
+  .selling {
+    position: absolute;
+    width: 400px;
+    height: 44px;
+    left: 380px;
+    top: 500px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    letter-spacing: 0.06em;
+
+    color: #2A363B;
+  }
+
+  .name-input {font-family: Montserrat;
+    font-style: normal;
+    position: absolute;
+    font-weight: bold;
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    top: 50px;
+
+    background: #FFFFFF;
+    border: 5px solid #2A363B;
+    box-sizing: border-box;
+  }
+
+  .location-input {
+    font-style: normal;
+    position: absolute;
+    font-weight: bold;
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    top: 50px;
+
+    background: #FFFFFF;
+    border: 5px solid #2A363B;
+    box-sizing: border-box;
+  }
+
+  .selling-input {
+    font-style: normal;
+    position: absolute;
+    font-weight: bold;
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    top: 50px;
+
+    background: #FFFFFF;
+    border: 5px solid #2A363B;
+    box-sizing: border-box;
+  }
+
+
+
+
+  .logo{
+    position: absolute;
+    width: 44px;
+    height: 90px;
+    left: 23px;
+    top: 25px;
+  }

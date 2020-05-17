@@ -11,27 +11,20 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-//makes cookie of userdata
-function userdata() {
-  farmerRef = firebase.database().ref();
-  newFarmerRef = farmerRef.push();
-  farmerID = newFarmerRef.key;
-  document.cookie = farmerRef+"="+farmerID;
-}
-
+var farmName = "";
 function writeData1(){
-  var splitcookie = document.cookie.split("=");
-  var farmerRef = splitcookie[0];
-  var farmerID = splitcookie[1];
-  console.log(document.cookie);
-    firebase.database().ref("Farmer/" + farmerID).set({
+    farmerRef = firebase.database().ref();
+    newFarmerRef = farmerRef.push();
+    farmerID = newFarmerRef.key;
+    farmName = document.getElementById("farm").value;
+    firebase.database().ref("Farmer/" + document.getElementById("farm").value).set({
         email: document.getElementById("email").value,
         farm: document.getElementById("farm").value,
         password: document.getElementById("password").value,
         confirm: document.getElementById("confirm").value
     });
 
-    farmerRef.child("Farmer/" + farmerID).push({
+    farmerRef.child("Farmer/" + farmName).push({
         email: document.getElementById("email").value,
         farm: document.getElementById("farm").value,
         password: document.getElementById("password").value,
@@ -42,26 +35,23 @@ function writeData1(){
 }
 
 function writeData2(){
-  //makes 2 element array [0] is farmerRef [1] is farmerID
-  var splitcookie = document.cookie.split("=");
-  var farmerRef = splitcookie[0];
-  var farmerID = splitcookie[1];
-    console.log(farmerRef)
-    // console.log(document.cookie);
-    firebase.database().ref("Farmer/" + farmerID + "/NewProduct").set({
+    farmerRef = firebase.database().ref();
+    newFarmerRef = farmerRef.push();
+    farmerID = newFarmerRef.key;
+    firebase.database().ref("Farmer/" + farmName).update({
         Product: document.getElementById("product").value,
         Units: document.getElementById("units").value,
         Quantity: document.getElementById("quantity").value,
         Price: document.getElementById("price").value
     });
 
-    farmerRef.child("Farmer/" + farmerID + "/NewProduct").push({
+    farmerRef.child("Farmer/" + farmName).push({
         Product: document.getElementById("product").value,
         Units: document.getElementById("units").value,
         Quantity: document.getElementById("quantity").value,
         Price: document.getElementById("price").value
     }).then(function() {
-        document.location.href = "__PLACEHOLDER___";
+        // document.location.href = "__PLACEHOLDER___";
     });
 
 }
@@ -95,21 +85,27 @@ function showPosition(position) {
     });
 }
 
-
-var map;
-
 function initMap(){  
     firebase.database().ref('User/Longitude').on('value', function(snapshot) {
         longitude = snapshot.val();
 
         firebase.database().ref('User/Latitude').on('value', function(snapshot) {
             latitude = snapshot.val();
-            // console.log("data is: " + global)
-
-            map = new google.maps.Map(document.getElementById('map'), {
+          
+            var map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: latitude, lng: longitude},
                 zoom: 12
             });
+
+            function addMarker(coords){
+                var marker = new google.maps.Marker({position: coords, map: map});
+            
+                var infoWindow = new google.maps.InfoWindow({
+                    content: "Test"
+                });
+            }
+            
+            addMarker({lat: latitude, lng: longitude});
 
         });
     });  

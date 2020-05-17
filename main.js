@@ -85,13 +85,13 @@ function showPosition(position) {
     });
 }
 
-function initMap(){  
+function initMap(){
     firebase.database().ref('User/Longitude').on('value', function(snapshot) {
         longitude = snapshot.val();
 
         firebase.database().ref('User/Latitude').on('value', function(snapshot) {
             latitude = snapshot.val();
-          
+
             var map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: latitude, lng: longitude},
                 zoom: 12
@@ -117,5 +117,5 @@ function initMap(){
             addMarker({lat: 51.182200, lng: -114.257417}, "<h1><a href=''>Silverwood Farm</a></h1><h2>32-60 Silverwoods Dr</h2><h3>(403) 932-5112</h3><p>- Beets $3.24/kg<br>- Broccoli $2.97/ea<br>- Lettuce $2.18/ea</p>");
 
         });
-    });  
+    });
 }

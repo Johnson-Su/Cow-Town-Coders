@@ -1,17 +1,17 @@
 body {
-  position: relative;
-  width: 1440px;
-  height: 900px;
+    position: relative;
+    width: 1440px;
+    height: 900px;
 
-  background: #99B898;
-}
+    background: #99B898;
+  }
 
-  .text {
+  .profile {
     position: absolute;
-    width: 1200px;
+    width: 700px;
     height: 88px;
-    left: 16%;
-    top: 82px;
+    left: 35%;
+    top: 8%;
 
     font-family: Montserrat;
     font-style: normal;
@@ -20,46 +20,28 @@ body {
     line-height: 88px;
     /* identical to box height */
 
-    text-align: center;
     letter-spacing: 0.06em;
 
     color: #FECEAB;
   }
 
-  .solid {
+  .line {
     position: absolute;
-    width: 1147.5px;
+    width: 80%;
     height: 0px;
     left: 17%;
-    top: 24%;
+    top: 25%;
+    text-align:center;
 
-    border: 10px solid #FECEAB;
+    border: 8px solid #FECEAB;
   }
 
-  .text1 {
+  .name {
     position: absolute;
-    width: 621px;
-    height: 78px;
-    left: 35%;
-    top: 28%;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 78px;
-    /* identical to box height */
-
-    text-align: center;
-    letter-spacing: 0.06em;
-
-    color: #2A363B;
-  }
-
-  .email-label {
-    position: absolute;
-    left: 25%;
-    top: 48%;
+    width: 300px;
+    height: 44px;
+    left: 800px;
+    top: 300px;
 
     font-family: Montserrat;
     font-style: normal;
@@ -69,14 +51,23 @@ body {
     /* identical to box height */
 
     letter-spacing: 0.06em;
+
     color: #2A363B;
   }
 
-  .farm-label {
+  .farmerpic{
     position: absolute;
-    left: 62%;
-    top: 48%;
-    width: 20%;
+    width: 200px;
+    height: 200px;
+    left: 465px;
+    top: 360px;
+  }
+
+  .food{
+    position: absolute;
+    width: 500px;
+    left: 150px;
+    top: 320px;
 
     font-family: Montserrat;
     font-style: normal;
@@ -86,14 +77,39 @@ body {
     /* identical to box height */
 
     letter-spacing: 0.06em;
+
     color: #2A363B;
+
   }
 
-  .password-label {
+  .berry1{
     position: absolute;
-    left: 25%;
-    top: 65%;
+    width: 200px;
+    height: 200px;
+    left: 500px;
+    top: 670px;
+  }
+  .berry2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 700px;
+    top: 670px;
+  }
+  .berry3{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 900px;
+    top: 670px;
+  }
 
+  .picname{
+    position: absolute;
+    width: 300px;
+    height: 44px;
+    left: 450px;
+    top: 300px;
 
     font-family: Montserrat;
     font-style: normal;
@@ -103,14 +119,17 @@ body {
     /* identical to box height */
 
     letter-spacing: 0.06em;
+
     color: #2A363B;
+
   }
 
-  .confirm-label {
+  .location {
     position: absolute;
-    left: 62%;
-    top: 65%;
-    width: 30%;
+    width: 179px;
+    height: 44px;
+    left: 800px;
+    top: 400px;
 
     font-family: Montserrat;
     font-style: normal;
@@ -120,101 +139,79 @@ body {
     /* identical to box height */
 
     letter-spacing: 0.06em;
+
     color: #2A363B;
+
   }
 
-  .email-input {
-    font-family: Montserrat;
-    font-style: normal;
+  .selling {
     position: absolute;
-    font-weight: bold;
-    position: absolute;
-    height: 33px;
     width: 400px;
-    padding: 3px;
-    top: 61px;
-    margin: 2px;
-    background: #FFFFFF;
-    border: 5px solid #2A363B;
-    box-sizing: border-box;
-  }
-
-  .farm-input {
-    font-family: Montserrat;
-    font-style: normal;
-    position: absolute;
-    font-weight: bold;
-    position: absolute;
-    height: 33px;
-    width: 400px;
-    top: 61px;
-
-    background: #FFFFFF;
-    border: 5px solid #2A363B;
-    box-sizing: border-box;
-  }
-
-  .password-input {
-    font-family: Montserrat;
-    font-style: normal;
-    position: absolute;
-    font-weight: bold;
-    position: absolute;
-    height: 33px;
-    width: 400px;
-    top: 61px;
-
-    background: #FFFFFF;
-    border: 5px solid #2A363B;
-    box-sizing: border-box;
-  }
-
-  .confirm-input {
-    font-family: Montserrat;
-    font-style: normal;
-    position: absolute;
-    font-weight: bold;
-    position: absolute;
-    height: 33px;
-    width: 400px;
-    top: 61px;
-    background: #FFFFFF;
-    border: 5px solid #2A363B;
-    box-sizing: border-box;
-  }
-
-  .create-account {
-    position: absolute;
-    width: 331px;
-    height: 112px;
-    left: 46%;
-    top: 85%;
-
-    border: 5px solid #2A363B;
-    box-sizing: border-box;
-    background: #99B898;
+    height: 44px;
+    left: 800px;
+    top: 500px;
 
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
-    line-height: 50px;
-    text-align: center;
+    line-height: 44px;
+    /* identical to box height */
+
     letter-spacing: 0.06em;
 
     color: #2A363B;
   }
 
-  .create-account:hover {
-    background-color: #2A363B;
-    color: #99B898;
-    transition-duration: 400ms;
+  .name-input {font-family: Montserrat;
+    font-style: normal;
+    position: absolute;
+    font-weight: bold;
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    top: 50px;
+
+    background: #FFFFFF;
+    border: 5px solid #2A363B;
+    box-sizing: border-box;
   }
 
-  .logo {
+  .location-input {
+    font-style: normal;
+    position: absolute;
+    font-weight: bold;
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    top: 50px;
+
+    background: #FFFFFF;
+    border: 5px solid #2A363B;
+    box-sizing: border-box;
+  }
+
+  .selling-input {
+    font-style: normal;
+    position: absolute;
+    font-weight: bold;
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    top: 50px;
+
+    background: #FFFFFF;
+    border: 5px solid #2A363B;
+    box-sizing: border-box;
+  }
+
+
+
+
+  .logo{
     position: absolute;
     width: 44px;
     height: 90px;
-    left: 21px;
-    top: 23px;
+    left: 23px;
+    top: 25px;
   }

@@ -121,6 +121,10 @@ body {
   }
 
   .product-input {
+    font-family: Montserrat;
+    font-style: normal;
+    position: absolute;
+    font-weight: bold;
     position: absolute;
     height: 33px;
     width: 400px;
@@ -132,6 +136,10 @@ body {
   }
 
   .units-input {
+    font-family: Montserrat;
+    font-style: normal;
+    position: absolute;
+    font-weight: bold;
     position: absolute;
     height: 33px;
     width: 400px;
@@ -143,6 +151,10 @@ body {
   }
 
   .quantity-input {
+    font-family: Montserrat;
+    font-style: normal;
+    position: absolute;
+    font-weight: bold;
     position: absolute;
     height: 33px;
     width: 400px;
@@ -154,6 +166,10 @@ body {
   }
 
   .price-input {
+    font-family: Montserrat;
+    font-style: normal;
+    position: absolute;
+    font-weight: bold;
     position: absolute;
     left: 0%;
     height: 33px;
@@ -247,6 +263,10 @@ body {
   }
 
   .location-input {
+    font-family: Montserrat;
+    font-style: normal;
+    position: absolute;
+    font-weight: bold;
     position: absolute;
     left: 25%;
     top:81%;
@@ -356,6 +376,10 @@ body {
   }
 
   .phone-input {
+    font-family: Montserrat;
+    font-style: normal;
+    position: absolute;
+    font-weight: bold;
     position: absolute;
     left: 25%;
     top:95%;

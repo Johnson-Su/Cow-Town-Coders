@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>farmer login</title>
-    <link rel="stylesheet" href="login-farmer.css" />
+    <title>farmer profile</title>
+    <link rel="stylesheet" href="profile.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,8 +15,8 @@
     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
     <script src="main.js"></script>
     <div>
-        <h1 class="welcome">
-            Welcome Back!
+        <h1 class="profile">
+            FARM PROFILE
         </h1>
 
         <hr class="line">
@@ -24,24 +24,28 @@
 
     <div>
         <a href="index.html" style="text-decoration: none;"><img src="logo.png" class="logo"></a>
+        <img src="farmperson.png" class="farmerpic">
+        <img src="berry1.png" class="berry1">
+        <img src="berry2.png" class="berry2">
+        <img src="berry3.png" class="berry3">
+        <label class="picname">Your Image</p>
+        <label class="food">Your Product Images</p>
     </div>
 
     <div>
-      <p class="login">User Info</p>
+        <label class="name">Farm Name</p>
+        <input name="name" class="name-input" placeholder="  Juneberry Farm">
     </div>
 
     <div>
-        <label class="email">Email</p>
-        <input name="email" class="email-input" placeholder="">
+        <label class="location">Location</p>
+        <input name="location" class="location-input" placeholder="  Calgary, AB T3R 1J3">
     </div>
 
     <div>
-        <label class="password">Password</p>
-        <input name="password" class="password-input" placeholder="">
+        <label class="selling">Selling Method</p>
+        <input name="selling" class="selling-input" placeholder="  Delivery">
     </div>
 
-    <div>
-      <a class="log-in" href="profile.html" style="text-decoration: none;">LOG ME IN</a>
-    </div>
 </body>
 </html>

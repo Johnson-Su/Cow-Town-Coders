@@ -51,7 +51,7 @@ function writeData2(){
   var farmerID = splitcookie[1];
     console.log(farmerRef)
     // console.log(document.cookie);
-    firebase.database().ref("Farmer/" + farmerID + "/New Product").set({
+    firebase.database().ref("Farmer/" + farmerID + "/NewProduct").set({
         Product: document.getElementById("product").value,
         Units: document.getElementById("units").value,
         Quantity: document.getElementById("quantity").value,

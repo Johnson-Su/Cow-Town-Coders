@@ -16,7 +16,7 @@ function userdata() {
   farmerRef = firebase.database().ref();
   newFarmerRef = farmerRef.push();
   farmerID = newFarmerRef.key;
-  document.cookie = "farmerRef.toString()"+"="+"farmerID.toString()";
+  document.cookie = farmerRef.toString()+"="+farmerID.toString();
 }
 
 function writeData1(){

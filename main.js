@@ -24,9 +24,6 @@ function writeData1(){
   var farmerRef = splitcookie[0];
   var farmerID = splitcookie[1];
   console.log(document.cookie);
-  farmerRef = firebase.database().ref();
-  newFarmerRef = farmerRef.push();
-  farmerID = newFarmerRef.key;
     firebase.database().ref("Farmer/" + farmerID).set({
         email: document.getElementById("email").value,
         farm: document.getElementById("farm").value,
@@ -58,7 +55,7 @@ function writeData2(){
         Price: document.getElementById("price").value
     });
 
-    farmerRef.child("Sell").push({
+    farmerRef.child("Farmer/" + farmerID + "/NewProduct").push({
         Product: document.getElementById("product").value,
         Units: document.getElementById("units").value,
         Quantity: document.getElementById("quantity").value,
